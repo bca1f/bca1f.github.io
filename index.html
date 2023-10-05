@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCA 1F Landing Page</title>
+    <style>
+        /* ... Previous CSS styles for the main content ... */
+        
+        .footer {
+            /* background-color: #e60000; */
+            color: white;
+            padding: 20px 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .footer-link {
+            text-decoration: none;
+            color:#e60000;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        h1 {
+            color: #e60000;
+            font-family: 'Raleway', sans-serif;
+        }
+        
+        h2 {
+    
+            /* color: #e60000; */
+            font-family: 'Raleway', sans-serif;
+        }
+
+
+
+        p {
+            font-size: 18px;
+        }
+
+        .qr-code {
+            margin-top: 20px;
+            cursor: pointer; /* Add cursor pointer to indicate it's clickable */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to BCA 1F</h1>
+        <h2>(Communication Channel)</h2>
+        <p>Join to get all the authentic updates straight from the CRs!</p>
+        <div class="qr-code" id="qrCodeLink">
+            <a href="https://chat.whatsapp.com/B68qusNhaD3ECdPHhLdq2z" target="_blank">
+                <img src="qr.png" alt="QR Code">
+            </a>
+        </div>
+        <p>Scan the QR code or click on it to join our WhatsApp group</p>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <a href="about.html" class="footer-link">About</a>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to open the WhatsApp group link when the QR code is clicked
+        document.getElementById("qrCodeLink").addEventListener("click", function() {
+            window.open("https://chat.whatsapp.com/B68qusNhaD3ECdPHhLdq2z", "_blank");
+        });
+    </script>
+</body>
+</html>
